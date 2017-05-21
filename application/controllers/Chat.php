@@ -22,10 +22,15 @@ class Chat extends CI_Controller{
       $data=$this->Bot_answer
                   ->get_answer($chat_message)
                   ->result();
-      //echo json_encode($data);
-      foreach ($data as $row) {
-      //  echo $row->answer;
-        echo $row->answer;
+      if ($data==null) {
+        echo "ไม่ทราบข้อมูลค่ะ";
+      }
+      else {
+        //echo json_encode($data);
+        foreach ($data as $row) {
+        //  echo $row->answer;
+          echo $row->answer;
+        }
       }
     }
     else {
