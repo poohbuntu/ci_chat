@@ -21,7 +21,10 @@
 				width: 300px;
 				*/
 				height: 400px;
+<<<<<<< HEAD
 
+=======
+>>>>>>> master
 				overflow: auto;
 			}
 			#content p{
@@ -47,6 +50,14 @@
 				/*
 				border: 1px solid;
 				*/
+<<<<<<< HEAD
+=======
+				padding: 6px;
+				text-decoration: none;
+			}
+			button{
+				border: none;
+>>>>>>> master
 				padding: 6px;
 				text-decoration: none;
 			}
@@ -81,7 +92,11 @@
 		</script>
 	</head>
 	<body>
+<<<<<<< HEAD
 		<div class="col-xs-6 col-sm-6 col-md-6">
+=======
+		<div class="col-xs-12 col-sm-12 col-md-12">
+>>>>>>> master
 			<div class="page-header">
 				<h1 class="text-center">สอบถามงานทะเบียน<small> ฝากคำถามสั้นๆ</small></h1>
 			</div>
@@ -92,7 +107,11 @@
 	      <form method="post">
 					<div class="form-group">
 						<div class="col-xs-10 col-sm-10 col-md-10">
+<<<<<<< HEAD
 	        		<input type="text" class="form-control" id="chat_message" name="chat_message" placeholder="ส่งข้อความ"></textarea>
+=======
+	        		<input type="text" class="form-control" id="chat_message" name="chat_message" rows="2" cols="25" placeholder="ส่งข้อความ"></textarea>
+>>>>>>> master
 						</div>
 						<input type="submit" class="btn btn-primary" id="submit" value="Send">
 					</div>
