@@ -15,7 +15,9 @@ class Bot_answer extends CI_Model{
     $this->db->select('answer')
               ->from('bot_answers')
               //->where('question',$chat_message);
-              ->where($where);
+              ->where($where)
+              ->order_by('rand()')
+              ->limit(1);
     $query=$this->db->get();
     return $query;
   }

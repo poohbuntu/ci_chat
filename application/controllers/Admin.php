@@ -29,4 +29,28 @@ class Admin extends CI_Controller{
       redirect('admin/add');
     }
   }
+
+  public function delete()
+  {
+    if ($this->Bot_admin->delete()==TRUE) {
+      redirect('admin/index');
+    } else {
+      redirect('admin/index');
+    }
+  }
+
+  public function update()
+  {
+    $data['query']=$this->Bot_admin->update();
+    $this->load->view('admin/update',$data);
+  }
+
+  public function update2()
+  {
+    if ($this->Bot_admin->update2()==TRUE) {
+      redirect('admin/index');
+    } else {
+      redirect('admin/update');
+    }
+  }
 }
