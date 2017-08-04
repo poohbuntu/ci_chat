@@ -58,6 +58,9 @@
 			#men-message{
 				background-color: #ccffcc;
 			}
+			#gif{
+				margin-top: 200px;
+			}
 		</style>
 		<script type="text/javascript">
 			$(document).ready(function() {
@@ -82,7 +85,9 @@
 							);
 							$("#content").animate({ scrollTop: $("#content")[0].scrollHeight}, 1000);
     					$('#chat_message').val('');
-
+							setTimeout(function(){
+								$("#gif").attr('src',"<?php echo base_url();?>assets/img/Cave_man.gif");
+							}, 3000);
             }
           });
 				});
@@ -93,7 +98,12 @@
 		<div class="container-fluid">
 			<div class="row">
 				<div class="col-xs-12 col-sm-12 col-md-12">
-					<div class="col-xs-6 col-sm-6 col-md-6">
+					<div class="col-xs-4 col-sm-4 col-md-4">
+						<div class="col-xs-4 col-sm-4 col-md-4 col-md-offset-3">
+							<img id="gif" src="<?php echo base_url();?>assets/img/Cave_man.gif" class="img-responsive">
+						</div>
+					</div>
+					<div class="col-xs-4 col-sm-4 col-md-4">
 						<div class="page-header">
 							<h1 class="text-center">สอบถามงานทะเบียน<small> ฝากคำถามสั้นๆ</small></h1>
 						</div>
@@ -110,9 +120,6 @@
 								</div>
 					    </form>
 						</div>
-					</div>
-					<div class="col-xs-6 col-sm-6 col-md-6">
-						<img id="gif" src="<?php echo base_url();?>assets/img/Cave_man.gif" class="img-responsive">
 					</div>
 				</div>
 			</div>
